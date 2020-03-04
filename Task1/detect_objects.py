@@ -5,7 +5,9 @@ import json
 
 def detect_objects(img):
 	cwd_path = os.getcwd()
+	#prototext file contains the information regarding the architecture of model
 	prototxt_path = os.path.join(cwd_path, "Model/MobileNetSSD_deploy.prototxt.txt")
+	#.caffemodel contains the weights of the model
 	caffemodel_path = os.path.join(cwd_path, "Model/MobileNetSSD_deploy.caffemodel")
 	
 	objects = ["background", "aeroplane", "bicycle", "bird", "boat",
@@ -45,4 +47,7 @@ def detect_objects(img):
 			object_list.append(obj)
 
 			n_objects[objects[idx]]+=1
+	#output format is list of both of the following
+	#1.list containing dictionary of number of each of objects and animals detected
+	#2.list of dictionaries, each containing information of the detected object or animal
 	return [[n_objects], object_list]

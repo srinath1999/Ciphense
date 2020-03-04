@@ -1,3 +1,6 @@
+Imp info:
+	**If the app is run multiple times, then the output shown might be sometimes the previous output, but on refreshing the page the correct output is shown.**
+
 Folder Overview:
 	Model - Contains model information that is needed face recognition
 	templates - Contains html files for input and output
@@ -22,4 +25,3 @@ How to use?
 	4.Copy the local host address and paste it in the browser.
 	5.Enter the path of the directory in which the images are present(full path along of the directory) and press submit.
 	6.The collage will be shown at the output
-		-If the app is run multiple times, then the output shown might be sometimes the previous output, but on refreshing the page the correct output is shown.
